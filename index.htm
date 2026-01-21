@@ -1,0 +1,72 @@
+    <title>Mic in hand, truth in motion 😤📢</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: ##564d4d;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1.7em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4680px;
+            height: 60px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+        }
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-title">Mic in hand, truth in motion 😤📢<span aria-label="smile" role="img"></span></div>
+    <div class="video-wrapper">
+        <div class="ad-banner-inside" id="ad-inside-video"></div>
+        <video controls poster="https://cdn.videy.co/e8piLsNX1.mp4">
+            <source src="https://cdn.videy.co/e8piLsNX1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script type="text/javascript">
+        var adDiv = document.getElementById('ad-inside-video');
+        var s1 = document.createElement('script');
+        s1.type = 'text/javascript';
+        s1.text = "atOptions = { 'key' : '77d0d7666d4c0f56b47a00a0de655ce9', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };";
+        adDiv.appendChild(s1);
+        var s2 = document.createElement('script');
+        s2.type = 'text/javascript';
+        s2.src = "//www.highperformanceformat.com/77d0d7666d4c0f56b47a00a0de655ce9/invoke.js";
+        adDiv.appendChild(s2);
+    </script>
+</body>
+</html>
